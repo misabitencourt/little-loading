@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Just a test</title>
+  </head>
+  <body>
+    Hello World
+
+    <script src="little-loading.min.js"></script>
+    <script>
+       (function(){
+            $littleLoading.show()
+            setTimeout(function(){
+                $littleLoading.hide()
+            }, 5e3)
+       }())
+    </script>
+  </body>
+</html>

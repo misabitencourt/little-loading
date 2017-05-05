@@ -1,0 +1,15 @@
+{
+  "name": "little-loading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node node_modules/babel-cli/bin/babel.js ./src/index.js -o ./dist/little-loading.min.js && node node_modules/uglify-js/bin/uglifyjs ./dist/little-loading.min.js -o ./dist/little-loading.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "uglify-js": "^2.8.22"
+  }
+}
