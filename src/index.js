@@ -37,7 +37,7 @@ function createLoadingMessage(imgSrc, defaultText) {
     info.style.fontFamily = 'Arial'
     info.style.textAlign = 'center'
     info.style.fontWeight = '100'
-    info.textContent = defaultText || 'Carregando'
+    info.textContent = defaultText || 'Aguarde, carregando...'
     msgDiv.appendChild(info)
 
     return msgDiv
@@ -72,6 +72,7 @@ window.$littleLoading = {
         if (this.backdrop && this.backdrop.parentElement) {
             this.backdrop.style.opacity = 0
             setTimeout(() => {
+                this.isLoading = false
                 this.backdrop.parentElement.removeChild(this.backdrop)
             }, 600)
         }
